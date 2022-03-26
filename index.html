@@ -541,6 +541,22 @@
             <div class="container">
                 <div class="footer-text padd-15">
                     <p>&copy; copyright | Todos los derechos reservados 2022.</br> Desarrollado por <font color="red">Miguel Gabriel</font></p>
+                    <br>
+                    <div id="donate-button-container">
+                        <div id="donate-button"></div>
+                        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                        <script>
+                        PayPal.Donation.Button({
+                        env:'production',
+                        hosted_button_id:'NHZV55SYHJDA6',
+                        image: {
+                        src:'https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif',
+                        alt:'Donar con el botón PayPal',
+                        title:'PayPal - The safer, easier way to pay online!',
+                        }
+                        }).render('#donate-button');
+                        </script>
+                        </div>                                                                                                 
                 </div>
             </div>
         </footer>
